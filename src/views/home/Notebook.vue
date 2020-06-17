@@ -111,6 +111,11 @@ export default {
   top: 18%;
   left: 28%;
   z-index: 2;
+   font-family: Georgia;
+  line-height: 1.4;
+  font-weight: normal;
+  font-stretch: normal;
+  font-variant: small-caps;
   width: 0;
   height: 135px;
   margin: 0;
@@ -185,6 +190,7 @@ export default {
  }
   .spiral div {
       position: relative;
+      z-index: 21;
       width: 30px;
       height: 20px;
       left: -14%;
@@ -207,6 +213,7 @@ export default {
   }
     .holes div {
       position: relative;
+      z-index: 21;
       width: 28%;
       height: 4%;
       left: 3%;

@@ -14,15 +14,11 @@
 					<input id="pass" type="password" class="input" data-type="password">
 				</div>
 				<div class="group">
-					<input id="check" type="checkbox" class="check" checked>
-					<label for="check"><span class="icon"></span> Keep me Signed in</label>
-				</div>
-				<div class="group">
 					<input type="submit" class="button" value="Sign In">
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">
-					<a href="#forgot">Forgot Password?</a>
+					<p href="#forgot">Forgot Password?</p>
 				</div>
 			</div>
 			<div class="sign-up-htm">
@@ -43,7 +39,7 @@
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">
-					<a>Already Member?</a>
+					<p>Already Member?</p>
 				</div>
 			</div>
 		</div>
@@ -71,7 +67,7 @@ a{color:inherit;text-decoration:none}
 	max-width:400px;
 	min-height:550px;
 	position:relative;
-	background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+	background:url(https://static9.depositphotos.com/1034300/1096/i/950/depositphotos_10966717-stock-photo-materials.jpg) no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 .login-html{
@@ -79,7 +75,7 @@ a{color:inherit;text-decoration:none}
 	height:100%;
 	position:absolute;
 	padding:90px 70px 50px 70px;
-	background:rgba(40,57,101,.8);
+	background:rgba(40,57,101,.1);
 }
 .login-html .sign-in-htm,
 .login-html .sign-up-htm{
@@ -112,8 +108,12 @@ a{color:inherit;text-decoration:none}
 }
 .login-html .sign-in:checked + .tab,
 .login-html .sign-up:checked + .tab{
-	color:#fff;
-	border-color:#1161ee;
+	color: rgb(255, 255, 255);
+	border-color: rgb(0, 0, 0);
+}
+.login-html .sign-in + .tab,
+.login-html .sign-up + .tab{
+  color: rgb(0, 0, 0);
 }
 .login-form{
 	min-height:345px;
@@ -128,7 +128,7 @@ a{color:inherit;text-decoration:none}
 .login-form .group .input,
 .login-form .group .button{
 	width:100%;
-	color:#fff;
+	color:rgb(255, 255, 255);
 	display:block;
 }
 .login-form .group .input,
@@ -136,17 +136,17 @@ a{color:inherit;text-decoration:none}
 	border:none;
 	padding:15px 20px;
 	border-radius:25px;
-	background:rgba(255,255,255,.1);
+	background:rgba(250, 250, 250, 0.2);
 }
 .login-form .group input[data-type="password"]{
 	-webkit-text-security:circle;
 }
 .login-form .group .label{
-	color:#aaa;
+	color:rgb(0, 0, 0);
 	font-size:12px;
 }
 .login-form .group .button{
-	background:#1161ee;
+	background:#19e07d;
 }
 .login-form .group label .icon{
 	width:15px;
@@ -180,7 +180,7 @@ a{color:inherit;text-decoration:none}
 	color:#fff;
 }
 .login-form .group .check:checked + label .icon{
-	background:#1161ee;
+	background:#19e07d;
 }
 .login-form .group .check:checked + label .icon:before{
 	transform:scale(1) rotate(45deg);
@@ -202,6 +202,11 @@ a{color:inherit;text-decoration:none}
 }
 .foot-lnk{
 	text-align:center;
+  
+}
+
+.foot-lnk p {
+  color: black;
 }
 
 
